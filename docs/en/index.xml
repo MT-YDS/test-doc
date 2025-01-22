@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kakip on AI-SBC Kakip Manual</title>
+    <link>http://localhost:1313/en/</link>
+    <description>Recent content in Kakip on AI-SBC Kakip Manual</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 20 Aug 2024 15:33:30 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Kakip</title>
+      <link>http://localhost:1313/en/about/</link>
+      <pubDate>Tue, 20 Aug 2024 15:33:30 +0900</pubDate>
+      <guid>http://localhost:1313/en/about/</guid>
+      <description>&lt;h2 id=&#34;why-we-developed-kakip&#34;&gt;Why we developed Kakip.&lt;/h2&gt;&#xA;&lt;p&gt;There have been several &amp;ldquo;AI booms&amp;rdquo; in the past, but both hardware and software for advanced processing were not yet ready for practical use.&#xA;Now that the global Internet environment has improved and hardware performance has evolved dramatically due to the high integration of IC chips,&#xA;AI processing has begun to be implemented in society at a different pace than in the past.&#xA;In such a situation, one of the challenges is to make robots intelligent, and edge AI processing (especially image processing) is important for robots to operate autonomously in the field.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

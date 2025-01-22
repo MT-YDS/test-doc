@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="jp-JP">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>5.1.1 仕様 - AI-SBC Kakip マニュアル</title>
+<meta name="generator" content="Hugo 0.141.0">
+<link href="http://localhost:1313//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="http://localhost:1313/jp/5/5-1/5-1-1/">
+<link rel="stylesheet" href="http://localhost:1313/css/theme.min.css">
+<link rel="stylesheet" href="http://localhost:1313/css/chroma.min.css">
+<script defer src="http://localhost:1313//js/fontawesome6/all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha256-4XodgW4TwIJuDtf+v6vDJ39FVxI0veC/kSCCmnFp7ck=" crossorigin="anonymous"></script>
+<script src="http://localhost:1313/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:url" content="http://localhost:1313/jp/5/5-1/5-1-1/">
+  <meta property="og:site_name" content="AI-SBC Kakip マニュアル">
+  <meta property="og:title" content="5.1.1 仕様">
+  <meta property="og:description" content="主な機能: フレームレート: HD@60fps＆FHD@60fps 出力形式: 非圧縮 UYVY ストリーミング 高速4レーンMIPI CSI-2インターフェース 様々なアプリケーションに適したカスタマイズされた光学部品やレンズとの使用に適した標準M12レンズホルダー 軽量で多機能、持ち運びに便利なデザイン インターフェース: インターフェース: 4レーンMIPI CSI-2 コネクタ： 22ピン FPCコネクタ ケーブルの長さ: 15cm モジュールの機能: センサー: Sony Starvis IMX462 焦点タイプ: 固定焦点 Sセンサー解像度: FHD クロマ: カラー センサーサイズ: 1/ 2.8型 出力形式: 非圧縮 UYVY ピクセルサイズ: 2.9 μm x 2.9 μm センサーアクティブエリア：1920H x 1080V G感度: HCGモードでは2376mV、LCGモードでは921mV ホルダー：M12(Sマウント) FOV: 132°(D)、113°(H)、61°(V) (標準レンズ) 電気的特性および寸法: 動作電圧:3.3V &#43;/- 5% 動作温度：-30°C～70°C 標準的な消費電力 : (TBD) サイズ (mm) (lxb)：30 x 30 mm その他: 準拠：RoHS">
+  <meta property="og:locale" content="jp_JP">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/og-image.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/og-image.png">
+  <meta name="twitter:title" content="5.1.1 仕様">
+  <meta name="twitter:description" content="主な機能: フレームレート: HD@60fps＆FHD@60fps 出力形式: 非圧縮 UYVY ストリーミング 高速4レーンMIPI CSI-2インターフェース 様々なアプリケーションに適したカスタマイズされた光学部品やレンズとの使用に適した標準M12レンズホルダー 軽量で多機能、持ち運びに便利なデザイン インターフェース: インターフェース: 4レーンMIPI CSI-2 コネクタ： 22ピン FPCコネクタ ケーブルの長さ: 15cm モジュールの機能: センサー: Sony Starvis IMX462 焦点タイプ: 固定焦点 Sセンサー解像度: FHD クロマ: カラー センサーサイズ: 1/ 2.8型 出力形式: 非圧縮 UYVY ピクセルサイズ: 2.9 μm x 2.9 μm センサーアクティブエリア：1920H x 1080V G感度: HCGモードでは2376mV、LCGモードでは921mV ホルダー：M12(Sマウント) FOV: 132°(D)、113°(H)、61°(V) (標準レンズ) 電気的特性および寸法: 動作電圧:3.3V &#43;/- 5% 動作温度：-30°C～70°C 標準的な消費電力 : (TBD) サイズ (mm) (lxb)：30 x 30 mm その他: 準拠：RoHS">
+
+  <meta itemprop="name" content="5.1.1 仕様">
+  <meta itemprop="description" content="主な機能: フレームレート: HD@60fps＆FHD@60fps 出力形式: 非圧縮 UYVY ストリーミング 高速4レーンMIPI CSI-2インターフェース 様々なアプリケーションに適したカスタマイズされた光学部品やレンズとの使用に適した標準M12レンズホルダー 軽量で多機能、持ち運びに便利なデザイン インターフェース: インターフェース: 4レーンMIPI CSI-2 コネクタ： 22ピン FPCコネクタ ケーブルの長さ: 15cm モジュールの機能: センサー: Sony Starvis IMX462 焦点タイプ: 固定焦点 Sセンサー解像度: FHD クロマ: カラー センサーサイズ: 1/ 2.8型 出力形式: 非圧縮 UYVY ピクセルサイズ: 2.9 μm x 2.9 μm センサーアクティブエリア：1920H x 1080V G感度: HCGモードでは2376mV、LCGモードでは921mV ホルダー：M12(Sマウント) FOV: 132°(D)、113°(H)、61°(V) (標準レンズ) 電気的特性および寸法: 動作電圧:3.3V &#43;/- 5% 動作温度：-30°C～70°C 標準的な消費電力 : (TBD) サイズ (mm) (lxb)：30 x 30 mm その他: 準拠：RoHS">
+  <meta itemprop="datePublished" content="2024-08-20T15:31:11+09:00">
+  <meta itemprop="dateModified" content="2024-08-20T15:31:11+09:00">
+  <meta itemprop="wordCount" content="444">
+  <meta itemprop="image" content="http://localhost:1313/images/og-image.png"></head>
+<body>
+
+<div class="container"><header>
+<h1>AI-SBC Kakip マニュアル</h1><span class="version">Version 1.0.0</span><a href="https://github.com/YDS-Kakip-Team/techdoc.git" class="github"><i class="fab fa-github"></i></a>
+</header>
+<div class="global-menu">
+<nav>
+<ul><li id="language" class="parent "><a href="/"><i class='fa-solid fa-house'></i>&nbsp;Language<i class="fas fa-angle-right"></i></a>
+<ul class="sub-menu">
+<li id="japanese" class="child "><a href="/jp">Japanese</a></li>
+<li id="english" class="child "><a href="/en">English</a></li>
+</ul>
+</li>
+<li id="twitter" class="twitter-menu-item"><a href="https://x.com/kakip_yds"><b>X</b> @kakip_yds</a></li>
+<li class=""><a href="/jp/about/">About Kakip</a></li></ul>
+</nav>
+</div>
+
+<div class="content-container">
+<main><h1>5.1.1 仕様</h1><h4 id="主な機能">主な機能:</h4>
+<ul>
+<li>フレームレート: HD@60fps＆FHD@60fps</li>
+<li>出力形式: 非圧縮 UYVY ストリーミング</li>
+<li>高速4レーンMIPI CSI-2インターフェース</li>
+<li>様々なアプリケーションに適したカスタマイズされた光学部品やレンズとの使用に適した標準M12レンズホルダー</li>
+<li>軽量で多機能、持ち運びに便利なデザイン</li>
+</ul>
+<h4 id="インターフェース">インターフェース:</h4>
+<ul>
+<li>インターフェース: 4レーンMIPI CSI-2</li>
+<li>コネクタ： 22ピン FPCコネクタ</li>
+<li>ケーブルの長さ: 15cm</li>
+</ul>
+<h4 id="モジュールの機能">モジュールの機能:</h4>
+<ul>
+<li>センサー: Sony Starvis IMX462</li>
+<li>焦点タイプ: 固定焦点</li>
+<li>Sセンサー解像度: FHD</li>
+<li>クロマ: カラー</li>
+<li>センサーサイズ: 1/ 2.8型</li>
+<li>出力形式: 非圧縮 UYVY</li>
+<li>ピクセルサイズ: 2.9 μm x 2.9 μm</li>
+<li>センサーアクティブエリア：1920H x 1080V</li>
+<li>G感度: HCGモードでは2376mV、LCGモードでは921mV</li>
+<li>ホルダー：M12(Sマウント)</li>
+<li>FOV: 132°(D)、113°(H)、61°(V) (標準レンズ)</li>
+</ul>
+<h4 id="電気的特性および寸法">電気的特性および寸法:</h4>
+<ul>
+<li>動作電圧:3.3V +/- 5%</li>
+<li>動作温度：-30°C～70°C</li>
+<li>標準的な消費電力 : (TBD)</li>
+<li>サイズ (mm) (lxb)：30 x 30 mm</li>
+</ul>
+<h4 id="その他">その他:</h4>
+<ul>
+<li>準拠：RoHS</li>
+</ul>
+<div class="edit-meta">
+Last updated on 20 Aug 2024
+
+
+<br>
+Published on 20 Aug 2024
+<br></div><nav class="pagination"><a class="nav nav-prev" href="http://localhost:1313/jp/5/5-1/" title="5.1 e-CAM22_CURZH"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - 5.1 e-CAM22_CURZH</a>
+<a class="nav nav-next" href="http://localhost:1313/jp/6/" title="6 その他">Next - 6 その他 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main>
+<div class="sidebar">
+
+<nav class="open-menu">
+<ul>
+<li class=""><a href="http://localhost:1313/">Home</a></li>
+
+<li class=""><a href="http://localhost:1313/jp/1/">1 安全上のご注意</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/1/1-1/">1.1 警告</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/1/1-2/">1.2 注意</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/1/1-3/">1.3 その他のご注意</a>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/2/">2 スタートアップガイド</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/2/2-1/">2.1 Boot Mediaの構築</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/2/2-2/">2.2 機器の接続と起動</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/2/2-3/">2.3 ソフトウェアについて</a>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/">3 ハードウェアについて</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/3/3-1/">3.1 コネクタ</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/3/3-1/3-1-1/">3.1.1. GPIO</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-1/3-1-2/">3.2 CSI</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-1/3-1-3/">3.3 DSI</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-1/3-1-4/">3.4 PCIe</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-1/3-1-5/">3.5 CAN-FD</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/3/3-1/3-1-5/3-5-1/">3.5.1 CANとは?</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-1/3-1-5/3-5-2/">3.5.2 プロトコル</a>
+  
+</li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-6/">3.6 USB3.2 Gen1 Type-A</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-7/">3.7 USB2.0 FS Type-C</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-8/">3.8 Ethernet</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-9/">3.9 microSD card</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-10/">3.10 JTAG/SWD</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-11/">3.11 DIP-SW</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-12/">3.12 Cooling fan connector</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-13/">3.13 Power light/Reset switch</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-14/">3.14 PoE</a>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/4/">4 オプション</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/4/4-1/">4.1 GMSL2 HAT</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/4/4-1/4-1-1/">4.1.1 仕様</a>
+  
+</li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class="parent"><a href="http://localhost:1313/jp/5/">5 サード・パーティ製品</a>
+  
+<ul class="sub-menu">
+
+<li class="parent"><a href="http://localhost:1313/jp/5/5-1/">5.1 e-CAM22_CURZH</a>
+  
+<ul class="sub-menu">
+
+<li class=" active"><a href="http://localhost:1313/jp/5/5-1/5-1-1/">5.1.1 仕様</a>
+  
+</li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/6/">6 その他</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/6/6-1/">6.1 輸出規制</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/6/6-1/6-1-1/">6.1.1 品目番号</a>
+  
+</li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

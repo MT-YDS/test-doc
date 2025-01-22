@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kakip on AI-SBC Kakip マニュアル</title>
+    <link>http://localhost:1313/jp/</link>
+    <description>Recent content in Kakip on AI-SBC Kakip マニュアル</description>
+    <generator>Hugo</generator>
+    <language>jp-JP</language>
+    <lastBuildDate>Tue, 20 Aug 2024 15:33:30 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/jp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Kakip</title>
+      <link>http://localhost:1313/jp/about/</link>
+      <pubDate>Tue, 20 Aug 2024 15:33:30 +0900</pubDate>
+      <guid>http://localhost:1313/jp/about/</guid>
+      <description>&lt;h2 id=&#34;kakipの生まれた理由&#34;&gt;Kakipの生まれた理由。&lt;/h2&gt;&#xA;&lt;p&gt;「AIブーム」と言われる時期が過去何度かありましたが、高度な処理を行うためにはハードウェア、ソフトウェア共にまだまだ実用に至るものではありませんでした。世界的にインターネットの環境が整い、ICチップの高集積化によりハードウェア性能が飛躍的に進化した現在、過去とは異なる勢いでAI処理の社会実装が始まっています。そういった中で、ロボットのインテリジェンス化も一つの課題となっており、現場でロボットが自律的に動作するためのエッジAI処理（特に画像処理）が重要となります。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

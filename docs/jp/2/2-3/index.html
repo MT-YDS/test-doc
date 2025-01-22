@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="jp-JP">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>2.3 ソフトウェアについて - AI-SBC Kakip マニュアル</title>
+<meta name="generator" content="Hugo 0.141.0">
+<link href="http://localhost:1313//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="http://localhost:1313/jp/2/2-3/">
+<link rel="stylesheet" href="http://localhost:1313/css/theme.min.css">
+<link rel="stylesheet" href="http://localhost:1313/css/chroma.min.css">
+<script defer src="http://localhost:1313//js/fontawesome6/all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha256-4XodgW4TwIJuDtf+v6vDJ39FVxI0veC/kSCCmnFp7ck=" crossorigin="anonymous"></script>
+<script src="http://localhost:1313/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:url" content="http://localhost:1313/jp/2/2-3/">
+  <meta property="og:site_name" content="AI-SBC Kakip マニュアル">
+  <meta property="og:title" content="2.3 ソフトウェアについて">
+  <meta property="og:description" content="Kakipのソフトウェアに関して 概要 ユーザーが円滑に開発や組込を開始できるよう、Kakip向けに最適化されたLinuxベースのソフトウェアを提供します。本ソフトウェアはDRP-AI3によるAI推論処理を最大限に活用できるように設計されており、特にロボティクス開発に有用な各種ソフトウェアとの連携を前提としている。">
+  <meta property="og:locale" content="jp_JP">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/og-image.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/og-image.png">
+  <meta name="twitter:title" content="2.3 ソフトウェアについて">
+  <meta name="twitter:description" content="Kakipのソフトウェアに関して 概要 ユーザーが円滑に開発や組込を開始できるよう、Kakip向けに最適化されたLinuxベースのソフトウェアを提供します。本ソフトウェアはDRP-AI3によるAI推論処理を最大限に活用できるように設計されており、特にロボティクス開発に有用な各種ソフトウェアとの連携を前提としている。">
+
+  <meta itemprop="name" content="2.3 ソフトウェアについて">
+  <meta itemprop="description" content="Kakipのソフトウェアに関して 概要 ユーザーが円滑に開発や組込を開始できるよう、Kakip向けに最適化されたLinuxベースのソフトウェアを提供します。本ソフトウェアはDRP-AI3によるAI推論処理を最大限に活用できるように設計されており、特にロボティクス開発に有用な各種ソフトウェアとの連携を前提としている。">
+  <meta itemprop="datePublished" content="2024-10-06T23:45:00+09:00">
+  <meta itemprop="dateModified" content="2024-10-06T23:45:00+09:00">
+  <meta itemprop="wordCount" content="1474">
+  <meta itemprop="image" content="http://localhost:1313/images/og-image.png"></head>
+<body>
+
+<div class="container"><header>
+<h1>AI-SBC Kakip マニュアル</h1><span class="version">Version 1.0.0</span><a href="https://github.com/YDS-Kakip-Team/techdoc.git" class="github"><i class="fab fa-github"></i></a>
+</header>
+<div class="global-menu">
+<nav>
+<ul><li id="language" class="parent "><a href="/"><i class='fa-solid fa-house'></i>&nbsp;Language<i class="fas fa-angle-right"></i></a>
+<ul class="sub-menu">
+<li id="japanese" class="child "><a href="/jp">Japanese</a></li>
+<li id="english" class="child "><a href="/en">English</a></li>
+</ul>
+</li>
+<li id="twitter" class="twitter-menu-item"><a href="https://x.com/kakip_yds"><b>X</b> @kakip_yds</a></li>
+<li class=""><a href="/jp/about/">About Kakip</a></li></ul>
+</nav>
+</div>
+
+<div class="content-container">
+<main><h1>2.3 ソフトウェアについて</h1><h2 id="kakipのソフトウェアに関して">Kakipのソフトウェアに関して</h2>
+<h3 id="概要">概要</h3>
+<p>ユーザーが円滑に開発や組込を開始できるよう、Kakip向けに最適化されたLinuxベースのソフトウェアを提供します。本ソフトウェアはDRP-AI3によるAI推論処理を最大限に活用できるように設計されており、特にロボティクス開発に有用な各種ソフトウェアとの連携を前提としている。</p>
+<hr>
+<h3 id="kakipのソフトウェアスタック">Kakipのソフトウェアスタック</h3>
+<p>Kakipのソフトウェア構成は以下の図のようになります。波線部分は必要に応じてユーザーにて構築いただく項目になります。</p>
+<h4 id="kakip実運用時のソフトウェア構成">Kakip実運用時のソフトウェア構成</h4>
+<p><img src="/jp/2/2-3/images/Software_stack.png" alt="Software_Stack"></p>
+<hr>
+<h3 id="github">GitHub</h3>
+<p>最新のソフトウェア（OSイメージを除く）、それに付随する導入に関するチュートリアルなどのドキュメント等は以下のGitHubリポジトリにて提供致します。<br>
+<a href="https://github.com/Kakip-ai">GitHub: Kakip-ai</a></p>
+<hr>
+<h3 id="osについて">OSについて</h3>
+<h4 id="linux-os">Linux OS</h4>
+<p>Cortex-A55に適用可能な以下のOSを提供する。
+Ubuntu 24.04（カーネルはRenesas社提供のAI SDKに含まれるYocto Linuxのカーネルをベースに調整している）</p>
+<h4 id="rtos">RTOS</h4>
+<p>Cortex-R8及びCortex-M33に適用可能なRTOSは今後提供予定です。（2024年10月7日時点では未実装）</p>
+<hr>
+<h3 id="デバイスドライバ">デバイスドライバ</h3>
+<p>Kakipに付属するBSPには、以下のデバイスドライバが含まれております。</p>
+<h4 id="drp-ai-driver">DRP-AI Driver</h4>
+<p>DRP-AI Translator（Renesas）を介して生成されたニューラルネットワークモデルのデータ（バイナリ）をユーザーアプリからの指示に基づいて起動する。</p>
+<h4 id="drp-driver">DRP Driver</h4>
+<p>OpenCV Accelerator（Renesas）などで生成された回路情報を表すデータ（コンフィグレーションデータ）をロードし、DRPへ回路情報を書き込む。</p>
+<h4 id="各種ペリフェラル用デバイスドライバ">各種ペリフェラル用デバイスドライバ</h4>
+<p>各種ペリフェラルに対応したデバイスドライバをインストールしている。詳細はGitHubを参照ください。</p>
+<hr>
+<h3 id="ファームウェア">ファームウェア</h3>
+<p>Renesas AI SDK v5.00を基盤とし、Kakipのハードウェア構成に応じて、U-Boot等のファームウェアに修正を施している。詳細はGitHubを参照ください。</p>
+<hr>
+<h3 id="連携可能な外部ソフトウェア">連携可能な外部ソフトウェア</h3>
+<p>本項では、提供するLinuxベースのソフトウェア上で動作確認済みの代表的な外部ソフトウェアを紹介します。これらの外部ソフトウェアの導入手順についてはGitHubにてチュートリアルとして公開しております。</p>
+<h4 id="ロボティクス開発関連">ロボティクス開発関連</h4>
+<p>ロボティックスシステム開発に特化した、オープンソースのフレームワーク及びツール</p>
+<ul>
+<li>ROS2</li>
+<li>Rviz</li>
+<li>Gazebo</li>
+</ul>
+<h4 id="ai画像処理関連">AI画像処理関連</h4>
+<p>DRP-AI3及びDRPを用いた画像処理において使用されるアプリケーション及びライブラリ</p>
+<ul>
+<li>YOLOv3 アプリ</li>
+<li>OpenCV</li>
+</ul>
+<hr>
+<h3 id="その他">その他</h3>
+<h4 id="mpuメーカー提供sdk">MPUメーカー提供SDK</h4>
+<p>Kakipで使用しているMPU RZ/V2Hには、Renesasから提供されるAI Software Develpment Kit（AI SDK）が利用可能です。このAI SDKは同社のRZ/Vシリーズの評価ボードキット向けに設計されたAIアプリケーション開発環境であり、ブートローダー、Linuxカーネル、クロスコンパイラ及びDRP-AI3やグラフィックス用のライブラリセットが含まれています。<br>
+kakipの量産初ロット時点におけるソフトウェア開発においても、AI SDK v5.00を参考にしており、UbuntuのLinuxカーネルはAI SDKのBSPに含まれるYocto Linuxのカーネルをベースに調整しています。デバイスドライバもAI SDKのBSPと同等のものが実装されています。<br>
+また、AI SDKに含まれるDRP-AI3及びDRPを活用するためのツール（DRP-AI Translator、OpenCV Acceleratorなど）も合わせて利用しています。</p>
+<div class="edit-meta">
+Last updated on 6 Oct 2024
+
+
+<br>
+Published on 6 Oct 2024
+<br></div><nav class="pagination"><a class="nav nav-prev" href="http://localhost:1313/jp/2/2-2/" title="2.2 機器の接続と起動"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;Prev - 2.2 機器の接続と起動</a>
+<a class="nav nav-next" href="http://localhost:1313/jp/3/" title="3 ハードウェアについて">Next - 3 ハードウェアについて <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main>
+<div class="sidebar">
+
+<nav class="open-menu">
+<ul>
+<li class=""><a href="http://localhost:1313/">Home</a></li>
+
+<li class=""><a href="http://localhost:1313/jp/1/">1 安全上のご注意</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/1/1-1/">1.1 警告</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/1/1-2/">1.2 注意</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/1/1-3/">1.3 その他のご注意</a>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class="parent"><a href="http://localhost:1313/jp/2/">2 スタートアップガイド</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/2/2-1/">2.1 Boot Mediaの構築</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/2/2-2/">2.2 機器の接続と起動</a>
+  
+</li>
+
+<li class=" active"><a href="http://localhost:1313/jp/2/2-3/">2.3 ソフトウェアについて</a>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/">3 ハードウェアについて</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/3/3-1/">3.1 コネクタ</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/3/3-1/3-1-1/">3.1.1. GPIO</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-1/3-1-2/">3.2 CSI</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-1/3-1-3/">3.3 DSI</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-1/3-1-4/">3.4 PCIe</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-1/3-1-5/">3.5 CAN-FD</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/3/3-1/3-1-5/3-5-1/">3.5.1 CANとは?</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-1/3-1-5/3-5-2/">3.5.2 プロトコル</a>
+  
+</li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-6/">3.6 USB3.2 Gen1 Type-A</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-7/">3.7 USB2.0 FS Type-C</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-8/">3.8 Ethernet</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-9/">3.9 microSD card</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-10/">3.10 JTAG/SWD</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-11/">3.11 DIP-SW</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-12/">3.12 Cooling fan connector</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-13/">3.13 Power light/Reset switch</a>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/3/3-14/">3.14 PoE</a>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/4/">4 オプション</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/4/4-1/">4.1 GMSL2 HAT</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/4/4-1/4-1-1/">4.1.1 仕様</a>
+  
+</li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/5/">5 サード・パーティ製品</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/5/5-1/">5.1 e-CAM22_CURZH</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/5/5-1/5-1-1/">5.1.1 仕様</a>
+  
+</li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="http://localhost:1313/jp/6/">6 その他</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/6/6-1/">6.1 輸出規制</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="http://localhost:1313/jp/6/6-1/6-1-1/">6.1.1 品目番号</a>
+  
+</li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>
