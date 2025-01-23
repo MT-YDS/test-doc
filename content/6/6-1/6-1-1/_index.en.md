@@ -5,7 +5,7 @@ draft: true
 ---
 
 ```
-USHTS: 8471500150    
+USHTS: 8471500150
 ECCN: 3A99
 ```
 
