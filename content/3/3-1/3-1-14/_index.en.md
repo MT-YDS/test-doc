@@ -19,3 +19,7 @@ Pin Header, 2x2position, pitch 2.54mm
 |---:|:---:|:---:|:---|
 |SP2|1|3|SP1|
 |CT2|2|4|CT1|
+
+### Excerpt Schematics
+
+![Connector_Ether](images/Ether_ExcerptSchematics.png)

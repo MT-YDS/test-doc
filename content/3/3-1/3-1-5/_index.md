@@ -19,3 +19,7 @@ weight: 50
 |1|CANH|
 |2|GND|
 |3|CANL|
+
+### Excerpt Schematics
+
+![Connector_CAN-FD](images/CAN-FD_ExcerptSchematics.png)

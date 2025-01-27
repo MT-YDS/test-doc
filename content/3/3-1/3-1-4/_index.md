@@ -37,5 +37,6 @@ FFC/FPCコネクタ、16ピン、0.5mmピッチ
 #### Specifications
 PCI-Express Gen3、エンドポイントに対応しています。
 
+### Excerpt Schematics
 
-
+![Connector_PCIe](images/PCIe_ExcerptSchematics.png)

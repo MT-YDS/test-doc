@@ -22,5 +22,9 @@ Pin Header, 2x5position, pitch 1.27mm
 |key|7|8|TDI|
 |GND|9|10|nSRST|
 
+### Excerpt Schematics
+
+![Connector_JTAG](images/JTAG_ExcerptSchematics.png)
+
 #### Note
 Primarily for debugging purposes, it provides clock-synchronous serial communication via JTAG and SWD.

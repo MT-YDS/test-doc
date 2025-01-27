@@ -25,3 +25,7 @@ DIP switch, 4position
 |||OFF|Normal mode|
 
 (*) If there is no boot image in the specified storage, it will be migrated to SCIF.
+
+### Excerpt Schematics
+
+![Connector_DIP-SW](images/DIP-SW_ExcerptSchematics.png)

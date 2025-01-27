@@ -9,3 +9,7 @@ weight: 80
 
 #### Specifications
 Support 10Base-T、100Base-T、1000Base-T.
+
+### Excerpt Schematics
+
+![Connector_Ether](images/Ether_ExcerptSchematics.png)

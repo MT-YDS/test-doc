@@ -40,3 +40,6 @@ FFC/FPC Connector, 22position, pitch 0.5mm
 |21|DATA0_N|
 |22|GND|
 
+### Excerpt Schematics
+
+![Connector_DSI](images/DSI_ExcerptSchematics.png)

@@ -20,5 +20,9 @@ weight: 120
 |1|FAN+|
 |2|FAN-|
 
+### Excerpt Schematics
+
+![Connector_FAN](images/FAN_ExcerptSchematics.png)
+
 ### 使用上の注意点
 5V/PWMを冷却ファンに供給します。

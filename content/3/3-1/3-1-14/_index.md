@@ -19,3 +19,7 @@ weight: 140
 |---:|:---:|:---:|:---|
 |SP2|1|3|SP1|
 |CT2|2|4|CT1|
+
+### Excerpt Schematics
+
+![Connector_Ether](images/Ether_ExcerptSchematics.png)

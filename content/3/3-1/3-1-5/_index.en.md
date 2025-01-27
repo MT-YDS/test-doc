@@ -20,5 +20,6 @@ Pin Header, 3position, pitch 1.5mm
 |2|GND|
 |3|CANL|
 
+### Excerpt Schematics
 
-
+![Connector_CAN-FD](images/CAN-FD_ExcerptSchematics.png)

@@ -40,4 +40,6 @@ FFC/FPCコネクタ、22ピン、0.5mmピッチ
 |21|DATA0_N|
 |22|GND|
 
+### Excerpt Schematics
 
+![Connector_DSI](images/DSI_ExcerptSchematics.png)

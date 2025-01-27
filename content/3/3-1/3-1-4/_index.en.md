@@ -37,4 +37,6 @@ FFC/FPC Connector, 16position pitch 0.5mm
 #### Specifications
 Supports PCI-Express Gen3, endpoints.
 
+### Excerpt Schematics
 
+![Connector_PCIe](images/PCIe_ExcerptSchematics.png)

@@ -22,5 +22,9 @@ weight: 100
 |key|7|8|TDI|
 |GND|9|10|nSRST|
 
+### Excerpt Schematics
+
+![Connector_JTAG](images/JTAG_ExcerptSchematics.png)
+
 #### 使用上の注意点
 主にデバッグを目的として、JTAG、SWDによるクロック同期式シリアル通信を提供します。

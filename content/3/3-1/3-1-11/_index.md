@@ -25,3 +25,7 @@ DIPスイッチ、4ポジション
 |||OFF|ノーマルモード|
 
 (*) 指定のストレージにブートイメージが無い場合はSCIFに移行
+
+### Excerpt Schematics
+
+![Connector_DIP-SW](images/DIP-SW_ExcerptSchematics.png)

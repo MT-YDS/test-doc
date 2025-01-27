@@ -20,5 +20,9 @@ Pin Header, 2position, pitch 1.5mm
 |1|FAN+|
 |2|FAN-|
 
+### Excerpt Schematics
+
+![Connector_FAN](images/FAN_ExcerptSchematics.png)
+
 ### Note
 Provides 5V/PWM to the cooling fan.
