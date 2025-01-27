@@ -1,14 +1,19 @@
 ---
-title: 3.4 PCIe
-date: 2024-10-18T13:50:11+09:00
+title: 3.1.4. PCIe
+date: 2025-01-27T10:41:52+09:00
 draft: true
 weight: 40
 ---
+## Connector (CN13) #
 
-#### Connector #
-* CN13
+![Connector_PCIe](images/PCIe_300x300.png)
 
-#### Pinout
+### Connector type
+FFC/FPC Connector, 16position pitch 0.5mm
+* Manufacturer: Molex
+* Parts #: 52559-1653
+
+### Pin Assignment
 
 |Pin|Name|
 |:---:|:---|
@@ -32,6 +37,4 @@ weight: 40
 #### Specifications
 Supports PCI-Express Gen3, endpoints.
 
-#### Connector type
-* Manufacturer: Molex
-* Parts #: 52559-1653
+

@@ -1,16 +1,23 @@
 ---
-title: 3.2 CSI
-date: 2024-10-10T10:58:11+09:00
+title: 3.1.2. CSI
+date: 2025-01-27T10:41:27+09:00
 draft: true
 weight: 20
 ---
-#### Connector #
+## Connector (CN10, CN12, CN14, CN15) #
 * CN10(MIPI CAM0)
 * CN12(MIPI CAM1)
 * CN14(MIPI CAM2)
 * CN15(MIPI CAM3)
 
-#### Pinout
+![Connector_CSI](images/CSI_300x300.png)
+
+### Connector type
+FFC/FPCコネクタ、22ピン、0.5mmピッチ
+* Manufacturer: Molex
+* Parts #: 52559-2253
+
+### Pin Assignment
 
 |Pin|Name|
 |:---:|:---|
@@ -37,6 +44,3 @@ weight: 20
 |21|DATA0_N|
 |22|GND|
 
-#### Connector type
-* Manufacturer: Molex
-* Parts #: 52559-2253

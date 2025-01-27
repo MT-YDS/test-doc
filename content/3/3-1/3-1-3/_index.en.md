@@ -1,13 +1,19 @@
 ---
-title: 3.3 DSI
-date: 2024-10-10T10:59:25+09:00
+title: 3.1.3. DSI
+date: 2025-01-27T10:41:36+09:00
 draft: true
 weight: 30
 ---
-#### Connector #
-* CN11
+## Connector (CN11) #
 
-#### Pinout
+![Connector_DSI](images/DSI_300x300.png)
+
+### Connector type
+FFC/FPC Connector, 22position, pitch 0.5mm
+* Manufacturer: Amphenol
+* Parts #: SFV22R-1STE1HLF
+
+### Pin Assignment
 
 |Pin|Name|
 |:---:|:---|
@@ -34,6 +40,3 @@ weight: 30
 |21|DATA0_N|
 |22|GND|
 
-#### Connector type
-* Manufacturer: Amphenol
-* Parts #: SFV22R-1STE1HLF

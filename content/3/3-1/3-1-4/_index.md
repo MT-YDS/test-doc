@@ -1,14 +1,19 @@
 ---
-title: 3.4 PCIe
-date: 2024-10-18T13:50:11+09:00
+title: 3.1.4. PCIe
+date: 2025-01-27T10:42:05+09:00
 draft: true
 weight: 40
 ---
+## Connector (CN13) #
 
-#### Connector #
-* CN13
+![Connector_PCIe](images/PCIe_300x300.png)
 
-#### Pinout
+### Connector type
+FFC/FPCコネクタ、16ピン、0.5mmピッチ
+* Manufacturer: Molex
+* Parts #: 52559-1653
+
+### Pin Assignment
 
 |Pin|Name|
 |:---:|:---|
@@ -32,7 +37,5 @@ weight: 40
 #### Specifications
 PCI-Express Gen3、エンドポイントに対応しています。
 
-#### Connector type
-* Manufacturer: Molex
-* Parts #: 52559-1653
+
 

@@ -1,10 +1,10 @@
 ---
-title: 3 Design and specifications
+title: 3.1 Connector
 date: 2024-10-21T15:28:46+09:00
 draft: false
 weight: 10
 ---
-## Connectors
+## Connectors layout
 ![Connectors](images/Kakip_Connectors.png)
 
 |CN|Name|CN|Name|

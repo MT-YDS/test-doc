@@ -1,6 +1,6 @@
 ---
 title: 3.1.1. GPIO
-date: 2025-01-22T14:09:30+09:00
+date: 2025-01-23T09:59:11+09:00
 draft: false
 weight: 10
 ---
@@ -9,8 +9,9 @@ weight: 10
 ![Connector_GPIO](images/GPIO_300x300.png)
 
 ### Connector Type
-40ピン・カラーピンヘッダ 2x20 2.54mmピッチ
-<br>
+カラーピンヘッダ、2x20ピン、2.54mmピッチ
+* Manufacturer: Samtec
+* Parts #: TSW-120-07-G-D
 
 ### Pin Assignment
 
