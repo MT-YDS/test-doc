@@ -6,7 +6,7 @@ weight: 10
 ---
 ## Connector (CN6) #
 
-![Connector_GPIO](images/GPIO_300x300.png)
+![Connector_GPIO](images/GPIO_300x300p.png)
 
 ### Connector Type
 カラーピンヘッダ、2x20ピン、2.54mmピッチ

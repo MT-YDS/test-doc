@@ -10,7 +10,7 @@ weight: 20
 * CN14(MIPI CAM2)
 * CN15(MIPI CAM3)
 
-![Connector_CSI](images/CSI_300x300.png)
+![Connector_CSI](images/CSI_300x300p.png)
 
 ### Connector type
 FFC/FPCコネクタ、22ピン、0.5mmピッチ

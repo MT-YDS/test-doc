@@ -6,7 +6,7 @@ weight: 100
 ---
 ## Connector (CN16) #
 
-![Connector_JTAG](images/JTAG_300x300.png)
+![Connector_JTAG](images/JTAG_300x300p.png)
 
 ### Connector type
 Pin Header, 2x5position, pitch 1.27mm

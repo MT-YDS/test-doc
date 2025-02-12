@@ -6,7 +6,7 @@ weight: 30
 ---
 ## Connector (CN11) #
 
-![Connector_DSI](images/DSI_300x300.png)
+![Connector_DSI](images/DSI_300x300p.png)
 
 ### Connector type
 FFC/FPC Connector, 22position, pitch 0.5mm

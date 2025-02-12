@@ -6,7 +6,7 @@ weight: 50
 ---
 ## Connector (CN8, CN9) #
 
-![Connector_CAN-FD](images/CAN-FD_300x300.png)
+![Connector_CAN-FD](images/CAN-FD_300x300p.png)
 
 ### Connector type
 ピン・ヘッダー、3ピン、1.5mmピッチ

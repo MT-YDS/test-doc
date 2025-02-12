@@ -6,7 +6,7 @@ weight: 40
 ---
 ## Connector (CN13) #
 
-![Connector_PCIe](images/PCIe_300x300.png)
+![Connector_PCIe](images/PCIe_300x300p.png)
 
 ### Connector type
 FFC/FPC Connector, 16position pitch 0.5mm

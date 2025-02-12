@@ -6,7 +6,7 @@ weight: 120
 ---
 ## Connector (CN7) #
 
-![Connector_FAN](images/FAN_300x300.png)
+![Connector_FAN](images/FAN_300x300p.png)
 
 ### Connector type
 ピン・ヘッダー、2ピン、1.5mmピッチ

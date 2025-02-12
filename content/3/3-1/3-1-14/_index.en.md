@@ -6,7 +6,7 @@ weight: 140
 ---
 ## Connector (CN3) #
 
-![Connector_PoE](images/PoE_300x300.png)
+![Connector_PoE](images/PoE_300x300p.png)
 
 ### Connector type
 Pin Header, 2x2position, pitch 2.54mm
